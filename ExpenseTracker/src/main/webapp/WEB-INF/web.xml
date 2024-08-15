@@ -1,0 +1,47 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>AddExpenseServlet</servlet-name>
+        <servlet-class>com.expensetracker.AddExpenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddExpenseServlet</servlet-name>
+        <url-pattern>/addExpense</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateExpenseServlet</servlet-name>
+        <servlet-class>com.expensetracker.UpdateExpenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateExpenseServlet</servlet-name>
+        <url-pattern>/updateExpense</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteExpenseServlet</servlet-name>
+        <servlet-class>com.expensetracker.DeleteExpenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteExpenseServlet</servlet-name>
+        <url-pattern>/deleteExpense</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewExpensesServlet</servlet-name>
+        <servlet-class>com.expensetracker.ViewExpensesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewExpensesServlet</servlet-name>
+        <url-pattern>/viewExpenses</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
